@@ -62,6 +62,7 @@ void disp(){
 	glFlush();
 }
 
+
 int main(int argc, char** argv){
 	glutInit(&argc,argv);
 	glutInitDisplayMode(GLUT_RGB|GLUT_SINGLE);

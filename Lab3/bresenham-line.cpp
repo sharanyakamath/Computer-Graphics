@@ -3,9 +3,16 @@
 
 int x1, y1, x2, y2;
 
+void myInit() {
+	glClear(GL_COLOR_BUFFER_BIT);
+	glClearColor(0.0, 0.0, 0.0, 1.0);
+	glMatrixMode(GL_PROJECTION);
+	gluOrtho2D(0, 500, 0, 500);
+}
+
 void draw_pixel(int x, int y) {
 	glBegin(GL_POINTS);
-	glVertex2i(x, y);
+	glVertex2f(x, y);
 	glEnd();
 }
 
@@ -68,6 +75,7 @@ int main(int argc, char **argv) {
 	printf( "Enter (x1, y1, x2, y2)\n");
 	scanf("%d %d %d %d", &x1, &y1, &x2, &y2);
 
+	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_SINGLE|GLUT_RGB);
 	glutInitWindowSize(500, 500);
 	glutInitWindowPosition(0, 0);
