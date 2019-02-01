@@ -142,7 +142,7 @@ int main(int argc, char **argv)
     glutInitDisplayMode(GLUT_SINGLE);
     glutInitWindowSize(500, 500);
     glutInitWindowPosition(100, 100);
-    glutCreateWindow("Summer");
+    glutCreateWindow("Winter");
     glutDisplayFunc(drawHouse);
     glutMainLoop();
     return 0;

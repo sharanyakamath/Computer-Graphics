@@ -116,10 +116,10 @@ void drawHouse()
         glBegin(GL_POLYGON);
 
                 glColor3ub(0,128,0); 
-                glVertex2f(-0.6, -0.1);
-                glVertex2f(0.7, -0.1);
-                glVertex2f(0.7, -0.2);
-                glVertex2f(-0.6, -0.2);
+                glVertex2f(-1, -0.1);
+                glVertex2f(1, -0.1);
+                glVertex2f(1, -1);
+                glVertex2f(-1, -1);
 
         glEnd();
 	
